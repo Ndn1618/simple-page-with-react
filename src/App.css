@@ -15,3 +15,11 @@ button {
   border-radius: 20px;
   padding:0 20px;
 }
+
+.hr {
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  margin-top: 100px;
+  border-bottom: 1px solid #eee;
+}

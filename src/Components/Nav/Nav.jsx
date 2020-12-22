@@ -25,7 +25,7 @@ function Nav() {
 
   return (
     <>
-      <header ref={navRef} className="header-area header-sticky" contentEditable={true}>
+      <header ref={navRef} className="header-area header-sticky">
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -34,7 +34,7 @@ function Nav() {
                   <img src={Logo} alt="Softy Pinko" />
                 </button>
                 <ul className="nav">
-                  <li><button onClick={() => history.push('/')} className="active">Home</button></li>
+                  <li><button onClick={() => history.push('/')}>Home</button></li>
                   <li><button onClick={() => history.push('/about')}>About</button></li>
                   <li><button onClick={() => history.push('/workprocess')}>Work Process</button></li>
                   {/* <li><button href="#testimonials">Testimonials</button></li>
