@@ -1,0 +1,96 @@
+.mini-box {
+  display: block;
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+}
+
+.mini-box:hover {
+  margin-top: -10px;
+}
+
+.mini-box:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  width: 100%;
+  opacity: .15;
+  height: 100%;
+  bottom: -10px;
+  left: 0px;
+  right: -20px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.mini-box i {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.mini-box span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777;
+  letter-spacing: .75px;
+}
+
+.mini-box strong {
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px;
+  margin-top: -40px;
+  flex-wrap: nowrap !important;
+  position: relative;
+  z-index: 1;
+}
+
+.slider {
+  transform: var(--transformX);
+}
+
+.image-slider {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.left-button,
+.right-button {
+  background-color: purple;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 20px;
+  z-index: 1;
+  top: 30%;
+}
+
+.left-button {
+  left: 30px;
+  transform: translate(-50%, 50%);
+}
+
+.right-button {
+  right: 30px;
+  transform: translate(50%, 50%);
+}
