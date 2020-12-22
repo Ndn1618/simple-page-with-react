@@ -13,16 +13,19 @@ function Nav() {
     const ref = navRef.current
 
     const ro = new ResizeObserver((entries) => {
-      console.log(entries[0].contentRect.height)
-      document.body.style.setProperty('--nav-height', (entries[0].contentRect.height) * 2 + 'px')
+      document.body.style.setProperty('--nav-height', (entries[0].contentRect.height) + 80 + 'px')
     })
 
     ro.observe(ref)
+
+    return () => {
+      if (ref) ro.unobserve(ref)
+    }
   }, [])
 
   return (
     <>
-      <header ref={navRef} className="header-area header-sticky">
+      <header ref={navRef} className="header-area header-sticky" contentEditable={true}>
         <div className="container">
           <div className="row">
             <div className="col-12">
